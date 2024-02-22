@@ -45,7 +45,7 @@ class CommentSchema(ma.Schema):
     card = fields.Nested('CardSchema', exclude=['comments'])
 
     class Meta:
-        fiields = ('id', 'message', 'user', 'card')
+        fields = ('id', 'message', 'user', 'card')
 
 
 comment_schema = CommentSchema()
